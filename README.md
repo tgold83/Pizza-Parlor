@@ -21,3 +21,11 @@ Code: Pizza.size("small");
   Pizza.costSize();
 Expected Output: "10"
 
+Describe: Pizza.prototype.costTopping
+
+Test: "It should add 2 for each item in the toppings array."
+Code: Pizza.toppings(["ham","pepperoni","pineapple"]);
+  Pizza.costTopping();
+Expected Output: 6
+
+
