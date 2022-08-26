@@ -23,17 +23,15 @@ Pizza.prototype.totalCost = function (){
 }
 
 //UI Logic
-function handleFormSubmission(event) {
-  event.preventDefault();
-  let toppings = document.querySelector("input#toppingInput").value;
-  const size = document.querySelector("input#pizzaSize");
-  let myPizza = new Pizza(toppings, size);
-  document.getElementById("submit").addEventListener("click", function() {
-    myPizza.totalCost();
-    document.querySelector("pizzaInput").value = myPizza.totalCost();
-  });
-}
+// function handleFormSubmission(event) {
+//   event.preventDefault();
+//   let toppings = document.getElementById("topping").value;
+//   document.getElementById("topping").innerText = toppings;
+//   let large = document.getElementById("value#pizzaSize").value;
+//   document.getElementById("value#pizzaSize").innerText = large;
+// }
 
-window.addEventListener("load", function (){
-  document.querySelector("form#pizzaInput").addEventListener("submit", handleFormSubmission);
-});
+// window.addEventListener("load", function (){
+//   document.querySelector("form#pizzaInput").addEventListener("submit", handleFormSubmission);
+// });
+

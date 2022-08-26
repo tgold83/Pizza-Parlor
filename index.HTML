@@ -10,13 +10,33 @@
     <h1>The Crusty Kitchen Pizzaria</h1>
     <h3>Ordering a pizza has never been cheesier!</h3><br><br>
     <form id="pizzaInput" class="pizzaInput">
-      <div class="topping">
-        <label for="player-one-name">Add a topping!</label>
-        <input type="text" id="toppingInput" name="toppingInput"><br>
-        <button type="click" id="addTopping" class="btn btn-dark">One More Topping!</button>
+      <div class="toppings">
+        <p><strong>Pick Your Toppings!</strong></p>
+        <input type="checkbox" id="pepperoni" name="toppingItem">
+        <label>Pepperoni</label><br>
+        <input type="checkbox" id="sausage" name="toppingItem">
+        <label>Sausage</label><br>
+        <input type="checkbox" id="ham" name="toppingItem">
+        <label>Ham</label><br>
+        <input type="checkbox" id="bacon" name="toppingItem">
+        <label>Bacon</label><br>
+        <input type="checkbox" id="olives" name="toppingItem">
+        <label>Olives</label><br>
+        <input type="checkbox" id="peppers" name="toppingItem">
+        <label>Green Peppers</label><br>
+        <input type="checkbox" id="pineapple" name="toppingItem">
+        <label>Pineapple</label><br>
+        <input type="checkbox" id="jalepeno" name="toppingItem">
+        <label>Jalepeno</label><br>
+        <input type="checkbox" id="onions" name="toppingItem">
+        <label>Onions</label><br>
+        <input type="checkbox" id="garlic" name="toppingItem">
+        <label>Garlic</label><br>
+        <input type="checkbox" id="extra-cheese" name="toppingItem">
+        <label>Extra Cheese</label>
       </div>
-      <br><br>
-      <p>How big should we make this thing?</p>
+      <br>
+      <p><strong>How big should we make this thing?</strong></p>
       <input type="radio" id="small" name="pizzaSize" value="small">
       <label for="small">Small</label><br>
       <input type="radio" id="medium" name="pizzaSize" value="medium">
