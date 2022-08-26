@@ -23,3 +23,17 @@ Pizza.prototype.totalCost = function (){
 }
 
 //UI Logic
+function handleFormSubmission(event) {
+  event.preventDefault();
+  let toppings = document.querySelector("input#toppingInput").value;
+  const size = document.querySelector("input#pizzaSize");
+  let myPizza = new Pizza(toppings, size);
+  document.getElementById("submit").addEventListener("click", function() {
+    myPizza.totalCost();
+    document.querySelector("pizzaInput").value = myPizza.totalCost();
+  });
+}
+
+window.addEventListener("load", function (){
+  document.querySelector("form#pizzaInput").addEventListener("submit", handleFormSubmission);
+});
