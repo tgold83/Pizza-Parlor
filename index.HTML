@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/scripts.js"></script>
+    <title>Pizza Parlor</title>
+  </head>
+  <body>
+    <h1>The Crusty Kitchen Pizzaria</h1>
+    <h3>Ordering a pizza has never been cheesier!</h3><br><br>
+    <form id="pizzaInput" class="pizzaInput">
+      <label for="player-one-name">Add a topping!</label>
+      <input type="text" id="toppingInput" name="toppingInput"><br>
+      <button type="click" id="addTopping" class="btn btn-dark">One More Topping!</button>
+      <br><br>
+      <p>How big should we make this thing?</p>
+      <input type="radio" id="small" name="pizzaSize" value="small">
+      <label for="small">Small</label><br>
+      <input type="radio" id="medium" name="pizzaSize" value="medium">
+      <label for="medium">Medium</label><br>
+      <input type="radio" id="large" name="pizzaSize" value="large">
+      <label for="large">Large</label><br><br>
+      <button type="submit" id="submit" class="btn btn-dark">Show Me the Cost of My Pizza!</button> 
+    </form>
+  </body>

@@ -17,3 +17,9 @@ Pizza.prototype.costSize = function () {
 Pizza.prototype.costTopping = function () {
   return this.toppings.length * 2
 }
+
+Pizza.prototype.totalCost = function (){
+  return this.costSize() + this.costTopping();
+}
+
+//UI Logic
