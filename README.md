@@ -28,6 +28,9 @@ Code: Pizza.toppings(["ham","pepperoni","pineapple"]);
   Pizza.costTopping();
 Expected Output: 6
 
-<!-- Describe: Pizza.prototype.totalCost
+Describe: Pizza.prototype.totalCost
 
-Test: "It should parseInt the costSize -->
+Test: "It should add costSize and costTopping together."
+Code: const myPizza = new Pizza(["anchovies", "pineapple"], "medium");
+  myPizza.totalCost();
+Expected Output: 19
