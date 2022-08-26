@@ -6,45 +6,56 @@
     <script src="js/scripts.js"></script>
     <title>Pizza Parlor</title>
   </head>
+  <style>
+    body {
+      background-image: url("img/pizza.JPG");
+      background-attachment: fixed;
+    }
+  </style>
   <body>
-    <h1>The Crusty Kitchen Pizzaria</h1>
-    <h3>Ordering a pizza has never been cheesier!</h3><br><br>
-    <form id="pizzaInput" class="pizzaInput">
-      <div class="toppings">
-        <p><strong>Pick Your Toppings!</strong></p>
-        <input type="checkbox" value="Pepperoni" class="toppingItem" name="toppingItem">
-        <label>Pepperoni</label><br>
-        <input type="checkbox" value="Sausage" class="toppingItem" name="toppingItem">
-        <label>Sausage</label><br>
-        <input type="checkbox" value="Ham" class="toppingItem" name="toppingItem">
-        <label>Ham</label><br>
-        <input type="checkbox" value="Bacon" class="toppingItem" name="toppingItem">
-        <label>Bacon</label><br>
-        <input type="checkbox" value="Olives" class="toppingItem" name="toppingItem">
-        <label>Olives</label><br>
-        <input type="checkbox" value="Peppers" class="toppingItem" name="toppingItem">
-        <label>Green Peppers</label><br>
-        <input type="checkbox" value="Pineapple" class="toppingItem" name="toppingItem">
-        <label>Pineapple</label><br>
-        <input type="checkbox" value="Jalepeno" class="toppingItem" name="toppingItem">
-        <label>Jalepeno</label><br>
-        <input type="checkbox" value="Onions" class="toppingItem" name="toppingItem">
-        <label>Onions</label><br>
-        <input type="checkbox" value="Garlic" class="toppingItem" name="toppingItem">
-        <label>Garlic</label><br>
-        <input type="checkbox" value="ExtraCheese" class="toppingItem" name="toppingItem">
-        <label>Extra Cheese</label>
+    <div class="container text-center">
+      <div class="jumbotron">
+        <h1>The Crusty Kitchen Pizzaria</h1>
+        <h3>Ordering a pizza has never been cheesier!</h3><br><br>
       </div>
-      <br>
-      <p><strong>How big should we make this thing?</strong></p>
-      <input type="radio" id="small" name="pizzaSize" value="small" checked>
-      <label for="small">Small</label><br>
-      <input type="radio" id="medium" name="pizzaSize" value="medium">
-      <label for="medium">Medium</label><br>
-      <input type="radio" id="large" name="pizzaSize" value="large">
-      <label for="large">Large</label><br><br>
-      <button type="submit" id="submit" class="btn btn-dark">Show Me the Cost of My Pizza!</button> 
-    </form><br>
-    <p>Your Pizza is Gonna Set You Back: $<span id="cost"></span></p>
-    
+      <form id="pizzaInput" class="pizzaInput">
+        <div class="toppings jumbotron">
+          <p><strong>Pick Your Toppings!</strong></p>
+          <input type="checkbox" value="Pepperoni" class="toppingItem" name="toppingItem">
+          <label>Pepperoni</label><br>
+          <input type="checkbox" value="Sausage" class="toppingItem" name="toppingItem">
+          <label>Sausage</label><br>
+          <input type="checkbox" value="Ham" class="toppingItem" name="toppingItem">
+          <label>Ham</label><br>
+          <input type="checkbox" value="Bacon" class="toppingItem" name="toppingItem">
+          <label>Bacon</label><br>
+          <input type="checkbox" value="Olives" class="toppingItem" name="toppingItem">
+          <label>Olives</label><br>
+          <input type="checkbox" value="Peppers" class="toppingItem" name="toppingItem">
+          <label>Green Peppers</label><br>
+          <input type="checkbox" value="Pineapple" class="toppingItem" name="toppingItem">
+          <label>Pineapple</label><br>
+          <input type="checkbox" value="Jalepeno" class="toppingItem" name="toppingItem">
+          <label>Jalepeno</label><br>
+          <input type="checkbox" value="Onions" class="toppingItem" name="toppingItem">
+          <label>Onions</label><br>
+          <input type="checkbox" value="Garlic" class="toppingItem" name="toppingItem">
+          <label>Garlic</label><br>
+          <input type="checkbox" value="ExtraCheese" class="toppingItem" name="toppingItem">
+          <label>Extra Cheese</label>
+        </div>
+        <br>
+        <div class="jumbotron">
+          <p><strong>How big should we make this thing?</strong></p>
+          <input type="radio" id="small" name="pizzaSize" value="small" checked>
+          <label for="small">Small</label><br>
+          <input type="radio" id="medium" name="pizzaSize" value="medium">
+          <label for="medium">Medium</label><br>
+          <input type="radio" id="large" name="pizzaSize" value="large">
+          <label for="large">Large</label><br><br>
+          <button type="submit" id="submit" class="btn btn-dark">Show Me the Cost of My Pizza!</button> 
+        </div>
+      </form><br>
+      <h3 class="jumbotron">Your Pizza is Gonna Set You Back: $<span id="cost"></span></h3><br><br>
+    </div>
   </body>
